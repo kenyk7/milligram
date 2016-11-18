@@ -6,9 +6,6 @@ $amount: 10%
 
 .button,
 button,
-input[type='button'],
-input[type='reset'],
-input[type='submit']
 	background-color: $color-primary
 	border: .1rem solid $color-primary
 	border-radius: .4rem
@@ -69,4 +66,11 @@ input[type='submit']
 		&:hover
 			background-color: transparent 
 			border-color: transparent 
-			color: darken($color-primary, $amount) 
+			color: darken($color-primary, $amount)
+
+		&[disabled]
+			
+				&:focus,
+				&:hover
+					background-color: transparent
+					border-color: transparent

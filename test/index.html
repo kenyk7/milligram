@@ -9,7 +9,7 @@
 		<link rel="icon" href="https://milligram.github.io/images/favicon.ico">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
-		<link rel="stylesheet" href="milligram.min.css"><!-- to generate this style run `$ npm start` -->
+		<link rel="stylesheet" href="milligram.css"><!-- to generate this style run `$ npm start` -->
 		<link rel="stylesheet" href="https://milligram.github.io/styles/main.min.css">
 	</head>
 	<body>
@@ -119,18 +119,18 @@
 					</div>
 					<div class="row">
 						<div class="column">
-							<a class="button button-action button-block button-round" href="javascript: void(0)">Default Button</a>
+							<a class="button button-action button-block button-round" href="javascript: void(0)">Extend Button</a>
 							<a class="button button-outline button-action button-block button-round" href="javascript: void(0)">Outlined Button</a>
 							<a class="button button-clear button-action button-block" href="javascript: void(0)">Clear Button</a>
-							<a class="button button-action button-block" disabled href="javascript: void(0)">Default Button</a>
+							<a class="button button-action button-block" disabled href="javascript: void(0)">Extend Button</a>
 							<a class="button button-outline button-action button-block" disabled href="javascript: void(0)">Outlined Button</a>
 							<a class="button button-clear button-action button-block" disabled href="javascript: void(0)">Clear Button</a>
 						</div>
 						<div class="column">
-							<button class="button button-action button-block">Default Button</button>
+							<button class="button button-action button-block">Extend Button</button>
 							<button class="button button-outline button-action button-block">Outlined Button</button>
 							<button class="button button-clear button-action button-block">Clear Button</button>
-							<button class="button button-action button-block" disabled>Default Button</button>
+							<button class="button button-action button-block" disabled>Extend Button</button>
 							<button class="button button-outline button-action button-block" disabled>Outlined Button</button>
 							<button class="button button-clear button-action button-block" disabled>Clear Button</button>
 						</div>
@@ -245,8 +245,8 @@
 									</div>
 									<label for="textareaField">Textarea field</label>
 									<textarea placeholder="Textarea field" id="textareaField"></textarea>
-									<input type="submit">
-									<input class="button-action button-clear" type="reset">
+									<input type="submit" class="button">
+									<input type="reset" class="button button-clear">
 								</div>
 							</div>
 						</fieldset>
