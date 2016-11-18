@@ -17,7 +17,9 @@
 		<main class="wrapper">
 
 			<section class="container" id="image">
-				<img src="https://raw.githubusercontent.com/milligram/milligram.github.io/master/images/thumbnail.jpg" alt="Image">
+				<div class="text-center">
+					<img src="https://raw.githubusercontent.com/milligram/milligram.github.io/master/images/thumbnail.jpg" alt="Image">
+				</div>
 			</section>
 
 			<section class="container" id="typography">
@@ -113,6 +115,24 @@
 							<div class="button" disabled>Default Button</div>
 							<div class="button button-outline" disabled>Outlined Button</div>
 							<div class="button button-clear" disabled>Clear Button</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="column">
+							<a class="button button-action button-block button-round" href="javascript: void(0)">Default Button</a>
+							<a class="button button-outline button-action button-block button-round" href="javascript: void(0)">Outlined Button</a>
+							<a class="button button-clear button-action button-block" href="javascript: void(0)">Clear Button</a>
+							<a class="button button-action button-block" disabled href="javascript: void(0)">Default Button</a>
+							<a class="button button-outline button-action button-block" disabled href="javascript: void(0)">Outlined Button</a>
+							<a class="button button-clear button-action button-block" disabled href="javascript: void(0)">Clear Button</a>
+						</div>
+						<div class="column">
+							<button class="button button-action button-block">Default Button</button>
+							<button class="button button-outline button-action button-block">Outlined Button</button>
+							<button class="button button-clear button-action button-block">Clear Button</button>
+							<button class="button button-action button-block" disabled>Default Button</button>
+							<button class="button button-outline button-action button-block" disabled>Outlined Button</button>
+							<button class="button button-clear button-action button-block" disabled>Clear Button</button>
 						</div>
 					</div>
 				</div>
@@ -226,7 +246,7 @@
 									<label for="textareaField">Textarea field</label>
 									<textarea placeholder="Textarea field" id="textareaField"></textarea>
 									<input type="submit">
-									<input type="reset" class="button-clear">
+									<input class="button-action button-clear" type="reset">
 								</div>
 							</div>
 						</fieldset>

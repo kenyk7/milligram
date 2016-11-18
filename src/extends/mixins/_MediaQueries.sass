@@ -1,0 +1,24 @@
+// Mixin media queries based recomended milligram
+
+$minw-lm: "(min-width: 40.0rem)" // Larger than mobile screen
+$minw-lt: "(min-width: 80.0rem)" // Larger than tablet screen
+$minw-ld: "(min-width: 120.0rem)" // Larger than desktop screen
+
+// Up
+=minw($breakpoint)
+	@if $breakpoint == lm
+		@media #{$minw-lm}
+			@content;
+
+	@else if $breakpoint == lt
+		@media #{$minw-lt}
+			@content;
+
+	@else if $breakpoint == ld
+		@media #{$minw-ld}
+			@content;
+			
+	// custom breakpoint
+	@else	
+		@media (min-width: #{$breakpoint})
+			@content;
